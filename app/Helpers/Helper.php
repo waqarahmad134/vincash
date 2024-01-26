@@ -1,17 +1,8 @@
-<?php // Code within app\Helpers\Helper.php
+<?php
 namespace App\Helpers;
-
-use Illuminate\Support\Facades\Http;
-use App\Models\User;
-use App\Models\Driver;
-use App\Models\Service;
-use App\Models\RegisteredService;
-use App\Models\Request as rides;
-use App\Models\Address;
-use App\Models\DriverReview;
-
 class Helper
 {
+
     public static function testnotification($body,$title,$device_token){
         $fcmUrl = 'https://fcm.googleapis.com/fcm/send';
         $token = $device_token;
